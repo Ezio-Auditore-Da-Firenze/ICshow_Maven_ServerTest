@@ -32,7 +32,7 @@ public class RecordMessageServlet extends HttpServlet {
         String addr=obj.getString("addr");
         Patient pa=ICA.selectPatient(pno,addr);
 
-        String newMessage = pa.getPno() + "-" + pa.getPname() + "-" + pa.getIdentity() + "-" + pa.getPsexdes() + "-" + pa.getTotalcost() + "-" + pa.getNotes() + "\n";
+        String newMessage ="\n"+pa.getPno() + "-" + pa.getPname() + "-" + pa.getIdentity() + "-" + pa.getPsexdes() + "-" + pa.getTotalcost() + "-" + pa.getNotes() + "\n";
         File file =new File("ic_record.txt");
         if(!file.exists()){
             file.createNewFile();
