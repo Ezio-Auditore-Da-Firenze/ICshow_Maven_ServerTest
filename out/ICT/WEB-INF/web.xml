@@ -8,10 +8,18 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>MineSomeBlockServlet</servlet-name>
-        <servlet-class>mine.MineSomeBlockServlet</servlet-class>
+        <servlet-class>servlet.MineSomeBlockServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MineSomeBlockServlet</servlet-name>
         <url-pattern>/mine</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RecordMessageServlet</servlet-name>
+        <servlet-class>servlet.RecordMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecordMessageServlet</servlet-name>
+        <url-pattern>/record</url-pattern>
     </servlet-mapping>
 </web-app>
